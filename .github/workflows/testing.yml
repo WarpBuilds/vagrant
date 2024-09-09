@@ -25,10 +25,11 @@ on:
       - 'templates/**'
       - 'vagrant.gemspec'
       - 'Rakefile'
+  workflow_dispatch:
 
 jobs:
   unit-tests-ruby:
-    runs-on: ubuntu-latest
+    runs-on: warp-ubuntu-latest-x64-4x
     continue-on-error: true
     strategy:
       matrix:
