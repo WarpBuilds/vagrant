@@ -29,7 +29,7 @@ on:
 
 jobs:
   unit-tests-ruby:
-    runs-on: warp-ubuntu-latest-x64-4x
+    runs-on: warp-ubuntu-latest-x64-4x;snapshot.key=warp-praj-vagrant-${{matrix.ruby}}
     continue-on-error: true
     strategy:
       matrix:
