@@ -47,9 +47,9 @@ jobs:
         run: sudo apt update && sudo apt -y install libarchive-tools
       - name: Run Tests
         run: bundle exec rake test:unit
-      - name: Create snapshot
-        uses: WarpBuilds/snapshot-save@v1
-        with:
-          alias: 'warp-praj-vagrant-${{matrix.ruby}}'
-          fail-on-error: true
-          wait-timeout-minutes: 60
+      # - name: Create snapshot
+      #   uses: WarpBuilds/snapshot-save@v1
+      #   with:
+      #     alias: 'warp-praj-vagrant-${{matrix.ruby}}'
+      #     fail-on-error: true
+      #     wait-timeout-minutes: 60
