@@ -42,7 +42,7 @@ jobs:
         uses: ruby/setup-ruby@3783f195e29b74ae398d7caca108814bbafde90e # v1.180.1
         with:
           ruby-version: ${{matrix.ruby}}
-          bundler-cache: true
+          bundler-cache: false
       # - name: install dependencies
       #   run: sudo apt update && sudo apt -y install libarchive-tools
       - name: Run Tests
